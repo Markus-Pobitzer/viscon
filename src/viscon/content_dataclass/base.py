@@ -37,3 +37,55 @@ class VisualObjectSequence:
     """
 
     visual_object_list: List[Content]
+
+
+@dataclass
+class Metadata:
+    """Stores metadata."""
+
+
+@dataclass
+class ContentURL:
+    """Stores the URL for a content.
+
+    Args:
+        url: The URL.
+    """
+
+    url: str
+
+    def __str__(self):
+        """Returns the url."""
+        return self.url
+
+
+@dataclass
+class ContentLicense:
+    """Stores the license for a content.
+
+    Args:
+        license: The license.
+    """
+
+    license: str = "Unknown"
+
+    def __str__(self):
+        """Returns the license."""
+        return self.license
+
+
+@dataclass
+class ContentSize:
+    """Stores the size of a content.
+
+    Size is indicated by Width, Height and number of channels.
+
+    Args:
+        width: The width.
+        height: The height.
+        channels: The number of channels.
+    """
+
+    width: int
+    height: int
+    channels: int
