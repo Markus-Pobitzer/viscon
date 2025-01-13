@@ -21,9 +21,12 @@ class VisualObject:
 
     Args:
         content_list: List of Content objects.
+        object_index: The index of the VisualObject, used if it is part of
+            an object sequence.
     """
 
     content_list: List[Content]
+    object_index: int = -1
 
 
 @dataclass
