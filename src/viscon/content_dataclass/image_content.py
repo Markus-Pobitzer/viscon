@@ -27,6 +27,7 @@ class ImageContent(Content):
     Args:
         img_path: Either PathLike object of the image on disk or ContentURL for image URL.
         license: ContentLicense.
+        metadata: The Image metadata.
         size: optional ContentSize.
     """
 
